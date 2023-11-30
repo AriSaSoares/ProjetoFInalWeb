@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background-image: url("../Imagens/01 - Fundo.png");
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+p {
+    text-align: left;
+    text-align: justify;
+}
+#MC {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+nav {
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+h1, a {
+    color: white;
+    text-decoration: none;
+}
+#Co {
+    color: black;
+}
+nav, ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    padding: 0 20px;
+}
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+li:hover, h1:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: grey;
+}
+button:focus ~ ul {
+    height: 410px;
+}
+@media (max-width: 1200px) {
+    nav, ul {
+        flex-direction: column;
+    }
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+    h1 {
+       margin: 10px;
+    }
+    button {
+        display: flex;
+    }
+    li, ul {
+        width: 100%;
+    }
+    img {
+        margin: 10px;
+    }
+}
+#MenuImg {
+    height: 40px;
+}
+.Alin {
+    display: table;
+    float: center;
+}
+.Img {
+    display: table-cell;
+    float: left;
+}
+.Log {
+    display: table-cell;
+    float: left;
+}
+.Til {
+    width: 40%;
+    background-color: rgb(245, 220, 179);
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    border: 3px solid black;
+    border-radius: 1em;
+    font-family: 'Arial';
+}
+.Jacan {
+    text-align: center;
+}
+#MenuDesen {
+    width: 80%;
+}
+
+.Camp {
+    padding: 0.5em;
+    background-color: wheat;
+    border-bottom: 3px solid black;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}
+#ImgLin {
+    width: 80%;
+}
+.Buton {
+    width: 20%;
+    background-color: wheat;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    border: 3px solid black;
+    border-radius: 1em;
+    font-family: 'Arial';
+}
+
+.Buton:hover {
+    background-color: chocolate;
+    transition: 0.6s;
+}
+#Bloco {
+    text-align: left;
+}
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: Black;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#ImgCont {
+    background-image: url("../Imagens/08 - Fundo.png");
+}
+#ImgCad {
+    background-image: url("../Imagens/09 - Fundo.png");
+}
+.Bill {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 230ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation: rota 4s;
+    animation-iteration-count: infinite;
+}
+#MenuBill {
+    width: 40%;
+    height: 40%;
+}
+.Bill:hover {
+    opacity: 1;
+}
+@keyframes rota {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

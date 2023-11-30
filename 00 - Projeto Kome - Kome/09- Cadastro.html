@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <title> Kome - Kome </title>
+        <meta charset = "UTF-8">
+        <link rel = "shortcut icon" href = "../Imagens/00 - Icon.png">
+        <link rel = "stylesheet" href = "../CSS/estilo.css">
+        <script src = "../JS/Kome.js"> </script>
+    </head>
+    <body id = "ImgCad">
+        <nav>
+            <div class = "Alin">
+                <div class = "Img" style = "width: auto;">
+                    <img id = "MenuImg" src = "../Imagens/00 - Icon.png" alt = "Logo do Site">
+                </div>
+                <div class = "Log" style = "width: auto;">
+                    <h1 style = "align-self: auto;"> <a href = "../index.html"> Kome - Kome </a> </h1>
+                </div>
+            </div>
+            <button> &#9776; </button>
+            <ul>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/01- Bebida.html"> Bebida </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/02- Entrada.html"> Entrada </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/03-Principal.html"> Principal </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/04- Sobremesa.html"> Sobremesa </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/05-Acompanhamento.html"> Acompanhamento </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/06-Comprar.html"> Compra </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/07-Contato.html"> Opinião </a> </p>
+                </li>
+                <li>
+                    <p id = "MC"> <a href = "../Pages/09- Cadastro.html"> Cadastro </a> </p>
+                </li>
+            </ul>
+        </nav>
+        <div class = "Til">
+            <form name = "Form">
+                <h2> Cadastre-se </h2>
+                <div id = "Bloco">
+                    <label for = "Nome"> Nome: </label>
+                        <br>
+                    <input type = "Tex" id = "NomeId" placeholder = "Ex: Ariane" name = "Nome" />
+                        <br>
+                    <label for = "Sobrenome"> Sobrenome: </label>
+                        <br>
+                    <input type = "Tex" id = "SobreId" placeholder = "Ex: Soares" name = "Sobre" />
+                        <br>
+                    <label for = "Idade"> Idade: </label>
+                        <br>    
+                    <input type = "Idade" id = "IdadeId" placeholder = "Ex: 18" name = "Idade" />
+                        <br>
+                    <label for = "Tamanho"> Sexo: </label>
+                        <br>
+                    <select id = tam>
+                        <option value = "" > Selecione </option>
+                        <option value = "F" > Feminino </option>
+                        <option value = "M" > Masculino </option>
+                        <option value = "O" > Outro </option>
+                    </select>
+                        <br>
+                    <label for = "Fone"> Fone: </label>
+                        <br>    
+                    <input type = "Tel" id = "FoneId" placeholder = "Ex: (xx) xx-xx-xx-xx" name = "Fone" />
+                        <br>
+                    <label for = "End"> Endereço: </label>
+                        <br>    
+                    <input type = "End" id = "EndId" placeholder = "Ex: Rua () Quadra () Lote ()" name = "End" />
+                        <br>
+                    <label for = "Cep"> CEP: </label>
+                        <br>    
+                    <input type = "Cep" id = "CepId" placeholder = "Ex: 75590 - 000" name = "End" />
+                        <br>
+                    <label for = "Email"> Email: </label>
+                        <br>
+                    <input type = "Email" id = "EmailId" placeholder = "Ex: Ariane@gmail.com" name = "Email" />
+                        <br>
+                    <label for = "Senha"> Senha: </label>
+                        <br>
+                    <input type = "Senha" id = "SenhaId" placeholder = "***********" name = "Senha" />
+                        <br>
+                    <label for = "SenhaC"> Confirmar Senha: </label>
+                        <br>
+                    <input type = "SenhaC" id = "SenhaCId" placeholder = "***********" name = "SenhaC" />
+                        <br> <br>
+                    <div id = "Selec">
+                        <label for = ""> Aceita o uso de dados ? </label>
+                            <br>
+                        Sim<INPUT TYPE ="RADIO" NAME = "OPCAO" VALUE = "Op1">
+                        Não<INPUT TYPE = "RADIO" NAME = "OPCAO" VALUE = "Op2">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class = "Buton" onclick = "Cad()">
+            Cadastrar
+        </div>
+    </body>
+</html>
